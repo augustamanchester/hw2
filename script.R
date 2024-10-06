@@ -48,5 +48,11 @@ for (size in twoc) {
 hist(means, breaks = 50, main = "Distribution Means", 
      xlab = "Samples", col = "pink")}
 
+#3
+output <- vector("double", ncol(mtcars)) 
+for (i in seq_along(mtcars)) { 
+  output[[i]] <- median(mtcars[[i]]) # 3. body
+}
+output
 
 
